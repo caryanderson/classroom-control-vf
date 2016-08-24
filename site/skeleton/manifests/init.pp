@@ -12,6 +12,6 @@ class 'skel' {
     }
     file { 'bashrc':
       path   => '/etc/skel/.bashrc',
-      source puppet:///modules/skeleton/bashrc,
+      source => 'puppet:///modules/skeleton/bashrc',
    }
   }
