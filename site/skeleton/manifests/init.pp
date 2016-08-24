@@ -1,11 +1,11 @@
-class 'skel' {
+class 'skeleton' {
     File {
       ensure => file,
       owner  => 'root',
       group  => 'root',
       mode   => '0644',
     }
-    file { '/etc/skel':
+    file { 'skel':
       ensure => directory,
       path   => '/etc/skel',
       mode   => '0755',
