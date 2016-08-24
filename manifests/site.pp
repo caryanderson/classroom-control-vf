@@ -45,6 +45,7 @@ node default {
   notify { "Hello New World, my name is ${::hostname}": }
   include examples::fundamentals
   include skeleton
+  include memcached
   
   exec { "cowsay 'welcome to ${::fqdn}' > /etc/motd":
     path => '/usr/local/bin/',
