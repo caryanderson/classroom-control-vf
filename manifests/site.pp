@@ -44,6 +44,7 @@ node default {
   #   class { 'my_class': }
   notify { "Hello New World, my name is ${::hostname}": }
   include examples::fundamentals
+  include skeleton
   
   exec { "cowsay 'welcome to ${::fqdn}' > /etc/motd":
     path => '/usr/local/bin/',
