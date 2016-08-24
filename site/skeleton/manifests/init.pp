@@ -1,4 +1,4 @@
-class 'skeleton' {
+class skeleton {
     File {
       ensure => file,
       owner  => 'root',
@@ -14,4 +14,4 @@ class 'skeleton' {
       path   => '/etc/skel/.bashrc',
       source => 'puppet:///modules/skeleton/bashrc',
    }
-  }
+}
