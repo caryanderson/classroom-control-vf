@@ -45,7 +45,7 @@ node default {
   notify { "Hello New World, my name is ${::hostname}": }
   include examples::fundamentals
   file { '/etc/motd':
-    ensure => file,
+    ensure => '/etc/motd',
     path   => '/etc/motd',
     owner  => 'root',
     group  => 'root',
